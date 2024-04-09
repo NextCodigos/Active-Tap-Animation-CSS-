@@ -1,72 +1,138 @@
+/* Importar la fuente de Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Estilos generales del cuerpo de la página */
 body {
 	font-family: 'Open Sans', sans-serif;
+	/* Establecer la fuente para todo el cuerpo */
 	background: #2c3e50;
+	/* Color de fondo del cuerpo */
 }
-nav{
+
+/* Estilos de la barra de navegación */
+nav {
 	position: relative;
+	/* Posición relativa para alinear los elementos internos */
 	margin: 270px auto 0;
+	/* Margen superior, centrado horizontalmente */
 	width: 590px;
+	/* Ancho de la barra de navegación */
 	height: 50px;
+	/* Altura de la barra de navegación */
 	background: #34495e;
+	/* Color de fondo de la barra de navegación */
 	border-radius: 8px;
+	/* Borde redondeado */
 	font-size: 0;
-	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+	/* Tamaño de fuente cero para eliminar el espacio entre elementos */
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+	/* Sombra ligera */
 }
-nav a{
+
+/* Estilos de los enlaces dentro de la barra de navegación */
+nav a {
 	font-size: 15px;
+	/* Tamaño de fuente */
 	text-transform: uppercase;
+	/* Convertir texto a mayúsculas */
 	color: white;
+	/* Color del texto */
 	text-decoration: none;
+	/* Sin subrayado en los enlaces */
 	line-height: 50px;
+	/* Altura de línea para centrar verticalmente */
 	position: relative;
+	/* Posición relativa para alinear pseudo-elementos */
 	z-index: 1;
+	/* Colocar los enlaces encima de otros elementos */
 	display: inline-block;
+	/* Mostrar en línea con margen y relleno */
 	text-align: center;
+	/* Centrar el texto horizontalmente */
 }
-nav .animation{
+
+/* Estilos de la animación de fondo */
+nav .animation {
 	position: absolute;
+	/* Posición absoluta para alinear con respecto al contenedor */
 	height: 100%;
-	/* height: 5px; */
+	/* Altura igual al contenedor */
 	top: 0;
-	/* bottom: 0; */
+	/* Alinear en la parte superior */
 	z-index: 0;
+	/* Colocar detrás de otros elementos */
 	background: #1abc9c;
+	/* Color de fondo de la animación */
 	border-radius: 8px;
+	/* Borde redondeado */
 	transition: all .5s ease 0s;
+	/* Transición suave */
 }
-nav a:nth-child(1){
+
+/* Estilos específicos para cada enlace y su animación */
+nav a:nth-child(1) {
+	/* Primer enlace */
 	width: 100px;
+	/* Ancho */
 }
-nav .start-home, a:nth-child(1):hover~.animation{
+
+/* Animación para el primer enlace y su estado activo */
+nav .start-home,
+a:nth-child(1):hover~.animation {
 	width: 100px;
+	/* Ancho */
 	left: 0;
+	/* Alinear a la izquierda */
 }
-nav a:nth-child(2){
+
+/* Estilos y animación para el segundo enlace */
+nav a:nth-child(2) {
 	width: 110px;
+	/* Ancho */
 }
-nav a:nth-child(2):hover~.animation{
+
+nav a:nth-child(2):hover~.animation {
 	width: 110px;
+	/* Ancho */
 	left: 100px;
+	/* Alinear a la derecha del primer enlace */
 }
-nav a:nth-child(3){
+
+/* Estilos y animación para el tercer enlace */
+nav a:nth-child(3) {
 	width: 100px;
+	/* Ancho */
 }
-nav a:nth-child(3):hover~.animation{
+
+nav a:nth-child(3):hover~.animation {
 	width: 100px;
+	/* Ancho */
 	left: 210px;
+	/* Alinear a la derecha del segundo enlace */
 }
-nav a:nth-child(4){
+
+/* Estilos y animación para el cuarto enlace */
+nav a:nth-child(4) {
 	width: 160px;
+	/* Ancho */
 }
-nav a:nth-child(4):hover~.animation{
+
+nav a:nth-child(4):hover~.animation {
 	width: 160px;
+	/* Ancho */
 	left: 310px;
+	/* Alinear a la derecha del tercer enlace */
 }
-nav a:nth-child(5){
+
+/* Estilos y animación para el quinto enlace */
+nav a:nth-child(5) {
 	width: 120px;
+	/* Ancho */
 }
-nav a:nth-child(5):hover~.animation{
+
+nav a:nth-child(5):hover~.animation {
 	width: 120px;
+	/* Ancho */
 	left: 470px;
+	/* Alinear a la derecha del cuarto enlace */
 }
